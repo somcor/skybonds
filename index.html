@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['1.5','3','6','1.5'];
+        var percentageArr = [];
+        var sum = arr.reduce((a, b) => parseFloat(a) + parseFloat(b), 0);
+
+        var percent = sum/100;
+
+        arr.map(item => {
+            percentageArr.push((item/percent).toFixed(3));
+        });
+
+        console.log(percentageArr);
+    </script>
+</body>
+</html>>
